@@ -64,8 +64,8 @@ pipeline {
 
         stage('Update deployment.yaml') {
             environment {
-               GIT_REPO_NAME = "venugopalsgnew/JavaAppDockerized.git"
-               GIT_USER_NAME = "venugopalsgnew"
+               GIT_REPO_NAME = "kumravib/JavaAppDockerized2.git"
+               GIT_USER_NAME = "kumravib"
              }
             steps {
                 withCredentials([string(credentialsId: 'git-credentials-id', variable: 'GITHUB_TOKEN')]) {
